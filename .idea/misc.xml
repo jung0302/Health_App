@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/android/src/Health/app/src/main/res/layout/activity_bmi.xml" value="0.16203703703703703" />
+        <entry key="..\:/android/src/Health/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/android/src/Health/app/src/main/res/layout/activity_timer.xml" value="0.1" />
         <entry key="..\:/health/app/src/main/res/layout/activity_main.xml" value="0.18020833333333333" />
       </map>
     </option>
