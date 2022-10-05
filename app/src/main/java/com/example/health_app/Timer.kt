@@ -14,6 +14,7 @@ class Timer : AppCompatActivity() {
     var initTime = 0L
     var pauseTime = 0L
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding =ActivityTimerBinding.inflate(layoutInflater)
