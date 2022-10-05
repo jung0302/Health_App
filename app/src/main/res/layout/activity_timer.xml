@@ -7,39 +7,42 @@
     tools:context=".Timer">
 
     <Chronometer
+        android:layout_marginTop="50dp"
         android:id="@+id/chronometer"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:layout_marginTop="100dp"
         android:textSize="60dp"/>
 
     <ImageView
+        android:id="@+id/runImage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
         android:src="@drawable/run"
         android:layout_below="@+id/chronometer"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:visibility="invisible"
-        android:layout_marginTop="80dp"/>
+        android:layout_marginTop="80dp"
+        android:visibility="invisible"/>
 
     <ImageView
+        android:id="@+id/stopImage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
         android:src="@drawable/stop"
         android:layout_below="@+id/chronometer"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:visibility="invisible"
-        android:layout_marginTop="80dp"/>
+        android:layout_marginTop="80dp"
+        android:visibility="invisible"/>
 
     <ImageView
+        android:id="@+id/watchImage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
         android:src="@drawable/reset"
         android:layout_below="@+id/chronometer"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:visibility="invisible"
-        android:layout_marginTop="80dp"/>
+        android:layout_marginTop="80dp"
+        android:visibility="invisible"/>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_horizontal"
@@ -47,28 +50,27 @@
         android:layout_marginBottom="70dp">
 
         <Button
-            android:id="@+id/startBtn"
-            android:text="start"
+            android:id="@+id/startButton"
             android:layout_width="100dp"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="start"/>
 
         <Button
-            android:id="@+id/stopBtn"
+            android:id="@+id/stopButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
             android:text="stop"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
             android:enabled="false"/>
 
         <Button
-            android:id="@+id/resetBtn"
-            android:text="reset"
+            android:id="@+id/resetButton"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:text="reset"
+            android:layout_marginLeft="25dp"
             android:enabled="false"/>
-
 
     </LinearLayout>
-
-
 
 </RelativeLayout>

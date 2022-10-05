@@ -1,9 +1,11 @@
 package com.example.health_app
 
+import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
+import android.os.SystemClock
+import android.view.LayoutInflater
+import com.example.health_app.databinding.ActivityMainBinding
 
 class Timer : AppCompatActivity() {
 
@@ -12,15 +14,44 @@ class Timer : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val binding =ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        setContentView(R.layout.activity_timer)
+        binding.startButton.setOnClickListener {
+            binding.chronometer.base = SystemClock.elapsedRealtime() + pauseTime
+            binding.chronometer.start()
+            binding.startButton.isEnabled = false
+            binding.stopButton.isEnabled = true
+            binding.resetButton.isEnabled = true
 
-        var start = findViewById<View>(R.id.startBtn) as Button
-
-        start.setOnClickListener {
-            
+            binding.runImage.isVisible =true
+            binding.stopImage.isVisible =false
+            binding.watchImage.isVisible =false
         }
 
+        binding.stopButton.setOnClickListener {
+            pauseTime = binding.chronometer.base - SystemClock.elapsedRealtime()
+            binding.chronometer.stop()
+            binding.startButton.isEnabled = true
+            binding.stopButton.isEnabled = false
+            binding.resetButton.isEnabled = true
 
+            binding.runImage.isVisible = false
+            binding.stopImage.isVisible = true
+            binding.watchImage.isVisible = false
+        }
+
+        binding.resetButton.setOnClickListener {
+            pauseTime = 0L
+            binding.chronometer.base = SystemClock.elapsedRealtime()
+            binding.chronometer.stop()
+            binding.startButton.isEnabled = true
+            binding.stopButton.isEnabled = false
+            binding.resetButton.isEnabled = false
+
+            binding.runImage.isVisible = false
+            binding.stopImage.isVisible = false
+            binding.watchImage.isVisible = true
+        }
     }
 }

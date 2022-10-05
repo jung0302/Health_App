@@ -3,14 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/health/app/src/main/res/drawable-v24/nav_icon_color.xml" value="0.1" />
-        <entry key="..\:/health/app/src/main/res/layout/activity_intro.xml" value="0.18020833333333333" />
-        <entry key="..\:/health/app/src/main/res/layout/activity_login.xml" value="0.165625" />
-        <entry key="..\:/health/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/health/app/src/main/res/layout/activity_mypage.xml" value="0.35520833333333335" />
-        <entry key="..\:/health/app/src/main/res/layout/fragment_calendar.xml" value="0.1" />
-        <entry key="..\:/health/app/src/main/res/layout/fragment_home.xml" value="0.1" />
-        <entry key="..\:/health/app/src/main/res/menu/bottom_navi.xml" value="0.4697265625" />
+        <entry key="..\:/android/src/Health/app/src/main/res/layout/fragment_calendar.xml" value="0.12916666666666668" />
+        <entry key="..\:/health/app/src/main/res/layout/activity_main.xml" value="0.18020833333333333" />
       </map>
     </option>
   </component>
