@@ -8,10 +8,18 @@
         <entry key="..\:/health/app/src/main/res/layout/activity_login.xml" value="0.165625" />
         <entry key="..\:/health/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/health/app/src/main/res/layout/activity_mypage.xml" value="0.35520833333333335" />
+        <entry key="..\:/health/app/src/main/res/layout/activity_timer.xml" value="0.35520833333333335" />
+        <entry key="..\:/health/app/src/main/res/layout/fragment_bmi.xml" value="0.35520833333333335" />
         <entry key="..\:/health/app/src/main/res/layout/fragment_calendar.xml" value="0.1" />
+        <entry key="..\:/health/app/src/main/res/layout/fragment_health.xml" value="0.35520833333333335" />
         <entry key="..\:/health/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/health/app/src/main/res/layout/fragment_mypage.xml" value="0.35520833333333335" />
+        <entry key="..\:/health/app/src/main/res/layout/fragment_pedometer.xml" value="0.35520833333333335" />
+        <entry key="..\:/health/app/src/main/res/layout/fragment_skill.xml" value="0.35520833333333335" />
+        <entry key="..\:/health/app/src/main/res/layout/fragment_timer.xml" value="0.35520833333333335" />
         <entry key="..\:/health/app/src/main/res/menu/bottom_navi.xml" value="0.43478260869565216" />
+        <entry key="..\:/health/app/src/main/res/menu/button_navi.xml" value="0.35520833333333335" />
+        <entry key="..\:/health/app/src/main/res/menu/top_navi.xml" value="0.35520833333333335" />
       </map>
     </option>
   </component>

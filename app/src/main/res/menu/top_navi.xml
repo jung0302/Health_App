@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/health"
+        android:enabled="true"
+        android:icon="@drawable/dumbell"/>
+
+    <item android:id="@+id/bmi"
+        android:enabled="true"
+        android:icon="@drawable/bmi"/>
+
+    <item android:id="@+id/timer"
+        android:enabled="true"
+        android:icon="@drawable/timer"/>
+
+    <item android:id="@+id/pedometer"
+        android:enabled="true"
+        android:icon="@drawable/pedometer"/>
+</menu>
