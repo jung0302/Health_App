@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.SystemClock
 import android.view.LayoutInflater
+import androidx.core.view.isVisible
 import com.example.health_app.databinding.ActivityMainBinding
+import com.example.health_app.databinding.ActivityTimerBinding
 
 class Timer : AppCompatActivity() {
 
@@ -14,7 +16,7 @@ class Timer : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding =ActivityMainBinding.inflate(layoutInflater)
+        val binding =ActivityTimerBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.startButton.setOnClickListener {

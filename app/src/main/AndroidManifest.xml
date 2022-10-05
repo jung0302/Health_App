@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Health_App">
         <activity
+            android:name=".YoutubeTEST"
+            android:exported="false" />
+        <activity
             android:name=".Timer"
             android:exported="false" />
         <activity
@@ -23,7 +26,7 @@
             android:exported="false" />
         <activity
             android:name=".IntroActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
