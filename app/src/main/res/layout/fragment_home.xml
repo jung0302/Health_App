@@ -6,26 +6,45 @@
     android:orientation="vertical"
     tools:context=".HomeFragment">
 
-   <RelativeLayout
+   <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:orientation="vertical">
 
-       <TextView
-           android:id="@+id/text"
-           android:layout_width="match_parent"
+       <Button
+           android:id="@+id/button"
+           android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:textSize="20dp"
-           android:fontFamily="@font/notosans_bold"
-           android:text="날씨"/>
+           android:layout_marginTop="37dp"
+           android:text="현재 위치 찾기"
+          />
+
        <TextView
-           android:layout_width="match_parent"
+           android:id="@+id/text1"
+           android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:layout_below="@+id/text"
-           android:textSize="40dp"
-           android:text="유튜브"/>
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="30dp"
+           android:padding="12dp"
+
+           android:text="위도"
+           android:textSize="18sp"
+            />
+
+       <TextView
+           android:id="@+id/text2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="178dp"
+           android:layout_marginEnd="29dp"
+           android:padding="12dp"
+           android:text="경도"
+           android:textSize="18sp"
+           />
 
 
-   </RelativeLayout>
+
+   </LinearLayout>
 
 </LinearLayout>
