@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.SystemClock
 import android.view.LayoutInflater
-import android.widget.Button
-import android.widget.TextView
 import androidx.core.view.isVisible
 import com.example.health_app.databinding.ActivityMainBinding
 import com.example.health_app.databinding.ActivityTimerBinding
@@ -15,15 +13,11 @@ class Timer : AppCompatActivity() {
 
     var initTime = 0L
     var pauseTime = 0L
-    lateinit var startButton: Button
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding =ActivityTimerBinding.inflate(layoutInflater)
+        val binding = ActivityTimerBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        startButton=findViewById(R.id.startButton)
 
         binding.startButton.setOnClickListener {
             binding.chronometer.base = SystemClock.elapsedRealtime() + pauseTime

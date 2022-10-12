@@ -23,10 +23,6 @@ class SkillFragment : Fragment() {
 
 
 
-
-
-
-
     }
 
     override fun onCreateView(
