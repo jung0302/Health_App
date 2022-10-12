@@ -43,27 +43,29 @@ class CalendarFragment : Fragment() {
         val cMonth = cal[Calendar.MONTH]
         val cDay = cal[Calendar.DAY_OF_MONTH]
 
-        dp!!.init(cYear, cMonth, cDay) { view, year, monthOfYear, dayOfMonth ->
-            fileName = (Integer.toString(year) + "_"
-                    + Integer.toString(monthOfYear + 1) + "_"
-                    + Integer.toString(dayOfMonth) + ".txt")
+//        dp!!.init(cYear, cMonth, cDay) { view, year, monthOfYear, dayOfMonth ->
+//            fileName = (Integer.toString(year) + "_"
+//                    + Integer.toString(monthOfYear + 1) + "_"
+//                    + Integer.toString(dayOfMonth) + ".txt")
+//
+//            val str = readDiary(fileName)
+//            edtDiary!!.setText(str)
+//            btnWrite!!.isEnabled = true
+//        }
 
-            val str = readDiary(fileName)
-            edtDiary!!.setText(str)
-            btnWrite!!.isEnabled = true
-        }
-
-        btnWrite!!.setOnClickListener {
-            try {
-                val outFs = context.openFileOutput(fileName,
-                    AppCompatActivity.MODE_PRIVATE)
-                val str = edtDiary!!.text.toString()
-                outFs.write(str.toByteArray())
-                outFs.close()
-                Toast.makeText(this.requireContext(), " 일지 저장", Toast.LENGTH_SHORT).show()
-            } catch (e: IOException) {
-            }
-        }
+//        btnWrite!!.setOnClickListener {
+//            try {
+//                val outFs = openFileOutput(
+//                    fileName,
+//                    AppCompatActivity.MODE_PRIVATE
+//                )
+//                val str = edtDiary!!.text.toString()
+//                outFs.write(str.toByteArray())
+//                outFs.close()
+//                Toast.makeText(this.requireContext(), " 일지 저장", Toast.LENGTH_SHORT).show()
+//            } catch (e: IOException) {
+//            }
+//        }
         return view
     }
 
