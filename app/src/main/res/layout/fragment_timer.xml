@@ -7,18 +7,17 @@
     tools:context=".Timer">
 
     <Chronometer
-        android:layout_marginTop="90dp"
         android:id="@+id/chronometer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:textSize="60dp"/>
+        android:textSize="60dp" />
 
     <ImageView
         android:id="@+id/runImage"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:src="@drawable/run"
+        android:src="@drawable/rg"
         android:layout_below="@+id/chronometer"
         android:layout_marginTop="80dp"
         android:visibility="invisible"/>

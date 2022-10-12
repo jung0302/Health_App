@@ -28,6 +28,7 @@ class Diary : AppCompatActivity() {
         val cYear = cal[Calendar.YEAR]
         val cMonth = cal[Calendar.MONTH]
         val cDay = cal[Calendar.DAY_OF_MONTH]
+
         dp!!.init(cYear, cMonth, cDay) { view, year, monthOfYear, dayOfMonth ->
             fileName = (Integer.toString(year) + "_"
                     + Integer.toString(monthOfYear + 1) + "_"
