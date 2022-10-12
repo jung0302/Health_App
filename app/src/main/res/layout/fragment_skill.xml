@@ -6,16 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp">
 
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="빈공간"/>
-    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/skill_ly"

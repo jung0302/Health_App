@@ -1,23 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TimerFragment">
+    tools:context=".Timer">
 
+    <Chronometer
+        android:layout_marginTop="90dp"
+        android:id="@+id/chronometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="60dp"/>
+
+    <ImageView
+        android:id="@+id/runImage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/run"
+        android:layout_below="@+id/chronometer"
+        android:layout_marginTop="80dp"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/stopImage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/stop"
+        android:layout_below="@+id/chronometer"
+        android:layout_marginTop="80dp"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/watchImage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/reset"
+        android:layout_below="@+id/chronometer"
+        android:layout_marginTop="80dp"
+        android:visibility="invisible"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:textSize="90dp"
-            android:text="타이머" />
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="start"/>
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="stop"
+            android:layout_marginLeft="25dp"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="reset"
+            android:layout_marginLeft="25dp"
+            android:enabled="false"/>
 
     </LinearLayout>
 
-</FrameLayout>
+</RelativeLayout>

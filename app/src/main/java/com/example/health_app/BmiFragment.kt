@@ -14,14 +14,14 @@ class BmiFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
+
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_skill, container, false)
+        val view = inflater.inflate(R.layout.fragment_bmi, container, false)
         val height: EditText = view.findViewById(R.id.height)
         val weight: EditText = view.findViewById(R.id.weight)
         val textView: TextView = view.findViewById(R.id.textview)
