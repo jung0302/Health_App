@@ -14,13 +14,19 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.core.app.ActivityCompat
 import com.google.android.gms.location.*
-import android.widget.Button
-import android.widget.ImageButton
 import androidx.fragment.app.Fragment
+import com.google.gson.annotations.SerializedName
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.http.GET
+import retrofit2.http.Query
+import java.util.ArrayList
 
 
 class HomeFragment : Fragment() {
@@ -38,12 +44,25 @@ class HomeFragment : Fragment() {
     lateinit var geocoder: Geocoder
 
 
+    lateinit var tvTemp : TextView          // 온도
+    lateinit var tvFeel : TextView          //체감온도
+
+    lateinit var tvTempHi : TextView        //최고온도
+    lateinit var tvTempLo : TextView        //최저온도
+
+    lateinit var weather: ImageView          //날씨그림
 
 
 
 
+    companion object{
 
 
+        var BaseUrl = "https://api.openweathermap.org/"
+        var AppId = "3e167cb3d121a8385cf010efb97d336f"
+        var lat = "37.4033679"
+        var lon = "126.9297888"
+    }
 
 
 
@@ -62,10 +81,73 @@ class HomeFragment : Fragment() {
 
         ImageButton = view.findViewById(R.id.imageButton)
         text1 = view.findViewById(R.id.text1)
-        text2 = view.findViewById(R.id.text2)
+
 
         geocoder = Geocoder(this.requireContext())
 
+        tvFeel = view.findViewById(R.id.tvFeel)
+        tvTemp = view.findViewById(R.id.tvTemp)
+
+        tvTempHi = view.findViewById(R.id.tvTempHi)
+        tvTempLo = view.findViewById(R.id.tvTempLo)
+
+        weather = view.findViewById(R.id.weather)
+
+        //Create Retrofit Builder
+        val retrofit = Retrofit.Builder()
+            .baseUrl(BaseUrl)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+
+        val service = retrofit.create(WeatherService::class.java)
+
+        val call = service.getCurrentWeatherData(lat, lon, AppId)
+        call.enqueue(object : Callback<WeatherResponse> {
+            override fun onFailure(call: Call<WeatherResponse>, t: Throwable) {
+                Log.d("TEST", "result :" + t.message)
+            }
+
+            override fun onResponse(
+                call: Call<WeatherResponse>,
+                response: Response<WeatherResponse>
+            ) {
+
+                if(response.code() == 200){
+                    val weatherResponse = response.body()
+                    Log.d("MainActivity", "result: " + weatherResponse.toString())
+                    var cTemp =  weatherResponse!!.main!!.temp - 273.15  //켈빈을 섭씨로 변환
+                    var minTemp = weatherResponse!!.main!!.temp_min - 273.15
+                    var maxTemp = weatherResponse!!.main!!.temp_max - 273.15
+                    var feel_like =weatherResponse!!.main!!.feels_like - 273.15
+
+                    var sky= weatherResponse!!.weather!!.get(0).main
+
+
+                    tvTemp.text = cTemp.toInt().toString() + "°"
+                    tvTempHi.text = "최고"+maxTemp.toInt().toString()+ "°  "
+                    tvTempLo.text = "최저"+minTemp.toInt().toString()+ "°"
+
+
+                    tvFeel.text = feel_like.toInt().toString()+"°"
+
+
+
+
+                    when(sky) {
+                        "Clear" ->  weather.setImageResource(R.drawable.sun)
+                        "Clouds" ->  weather.setImageResource(R.drawable.cloud)
+                        "Haze"  ->  weather.setImageResource(R.drawable.cloud)
+                        "Rain"  ->  weather.setImageResource(R.drawable.rainy)
+                        "snow"  ->  weather.setImageResource(R.drawable.snowflake)
+                        else -> weather.setImageResource(R.drawable.sun)
+                    }
+
+
+
+                }
+            }
+
+        })
 
 
 
@@ -158,6 +240,62 @@ class HomeFragment : Fragment() {
 
 
 
+}
+
+interface WeatherService{
+
+    @GET("data/2.5/weather")
+    fun getCurrentWeatherData(
+        @Query("lat") lat: String,
+        @Query("lon") lon: String,
+        @Query("appid") appid: String) :
+            Call<WeatherResponse>
+}
+
+class WeatherResponse(){
+    @SerializedName("weather") var weather = ArrayList<Weather>()
+    @SerializedName("main") var main: Main? = null
+    @SerializedName("wind") var wind : Wind? = null
+    @SerializedName("sys") var sys: Sys? = null
+}
+
+class Weather {
+    @SerializedName("id") var id: Int = 0
+    @SerializedName("main") var main : String? = null
+    @SerializedName("description") var description: String? = null
+    @SerializedName("icon") var icon : String? = null
+}
+
+class Main {
+    @SerializedName("temp")
+    var temp: Float = 0.toFloat()
+    @SerializedName("humidity")
+    var humidity: Float = 0.toFloat()
+    @SerializedName("pressure")
+    var pressure: Float = 0.toFloat()
+    @SerializedName("temp_min")
+    var feels_like: Float = 0.toFloat()
+    @SerializedName("feels_like")
+    var temp_min: Float = 0.toFloat()
+    @SerializedName("temp_max")
+    var temp_max: Float = 0.toFloat()
+
+}
+
+class Wind {
+    @SerializedName("speed")
+    var speed: Float = 0.toFloat()
+    @SerializedName("deg")
+    var deg: Float = 0.toFloat()
+}
+
+class Sys {
+    @SerializedName("country")
+    var country: String? = null
+    @SerializedName("sunrise")
+    var sunrise: Long = 0
+    @SerializedName("sunset")
+    var sunset: Long = 0
 }
 
 
