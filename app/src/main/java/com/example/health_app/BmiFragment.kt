@@ -12,25 +12,21 @@ import android.widget.TextView
 
 class BmiFragment : Fragment() {
 
-
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
+
     ): View? {
-        var view = inflater.inflate(R.layout.fragment_bmi, container, false)
+        val view = inflater.inflate(R.layout.fragment_bmi, container, false)
         val height: EditText = view.findViewById(R.id.height)
         val weight: EditText = view.findViewById(R.id.weight)
         val textView: TextView = view.findViewById(R.id.textview)
         val text: TextView = view.findViewById(R.id.text)
-        val text2: TextView= view.findViewById(R.id.text2)
+        val text2: TextView = view.findViewById(R.id.text2)
         val result: TextView = view.findViewById(R.id.result)
 
         result!!.setOnClickListener {
@@ -40,7 +36,7 @@ class BmiFragment : Fragment() {
             val weight = strNum.toInt().toDouble()
             val result = weight / height / height * 10000
             strNum = String.format("%.2f", result)
-            textView?.text = strNum
+            textView.text = strNum
             if (result <= 18.5) {
                 text!!.text = "저체중"
                 text!!.setTextColor(Color.parseColor("#7da4bd"))

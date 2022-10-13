@@ -1,54 +1,71 @@
 package com.example.health_app
 
 import android.os.Bundle
+import android.os.SystemClock
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
+import com.example.health_app.databinding.ActivityTimerBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
 class TimerFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+
+    var initTime = 0L
+    var pauseTime = 0L
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+
     }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_timer, container, false)
+        val binding = ActivityTimerBinding.inflate(layoutInflater)
+
+
+        binding.startButton.setOnClickListener {
+            binding.chronometer.base = SystemClock.elapsedRealtime() + pauseTime
+            binding.chronometer.start()
+            binding.startButton.isEnabled = false
+            binding.stopButton.isEnabled = true
+            binding.resetButton.isEnabled = true
+
+            binding.runImage.isVisible =true
+            binding.stopImage.isVisible =false
+            binding.watchImage.isVisible =false
+        }
+
+        binding.stopButton.setOnClickListener {
+            pauseTime = binding.chronometer.base - SystemClock.elapsedRealtime()
+            binding.chronometer.stop()
+            binding.startButton.isEnabled = true
+            binding.stopButton.isEnabled = false
+            binding.resetButton.isEnabled = true
+
+            binding.runImage.isVisible = false
+            binding.stopImage.isVisible = true
+            binding.watchImage.isVisible = false
+        }
+
+        binding.resetButton.setOnClickListener {
+            pauseTime = 0L
+            binding.chronometer.base = SystemClock.elapsedRealtime()
+            binding.chronometer.stop()
+            binding.startButton.isEnabled = true
+            binding.stopButton.isEnabled = false
+            binding.resetButton.isEnabled = false
+
+            binding.runImage.isVisible = false
+            binding.stopImage.isVisible = false
+            binding.watchImage.isVisible = true
+        }
+        return binding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment TimerFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            TimerFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }
+
 }
