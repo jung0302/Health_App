@@ -6,45 +6,46 @@
     android:orientation="vertical"
     tools:context=".HomeFragment">
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-       <Button
-           android:id="@+id/button"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_marginTop="37dp"
-           android:text="현재 위치 찾기"
-          />
+        <ImageButton
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="370dp"
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="20dp"
+            android:maxWidth="20dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
 
-       <TextView
-           android:id="@+id/text1"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_gravity="center_horizontal"
-           android:layout_marginTop="30dp"
-           android:padding="12dp"
+            android:src="@drawable/refresh" />
 
-           android:text="위도"
-           android:textSize="18sp"
-            />
-
-       <TextView
-           android:id="@+id/text2"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_gravity="center_horizontal"
-           android:layout_marginTop="178dp"
-           android:layout_marginEnd="29dp"
-           android:padding="12dp"
-           android:text="경도"
-           android:textSize="18sp"
-           />
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
 
 
+            android:text="위치"
+            android:textSize="18sp" />
 
-   </LinearLayout>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:padding="12dp"
+            android:text="날씨"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
 
 </LinearLayout>
