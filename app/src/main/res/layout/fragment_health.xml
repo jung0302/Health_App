@@ -8,23 +8,32 @@
     android:layout_marginTop="200dp">
 
 
-    <Button
-
+    <ImageButton
         android:layout_width="170dp"
         android:layout_height="60dp"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/torso"
+        android:background="@drawable/shape"/>
 
-    <Button
+    <ImageButton
         android:layout_marginTop="20dp"
         android:layout_width="170dp"
         android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/lower"
+        android:background="@drawable/shape"/>
 
-    <Button
+    <ImageButton
         android:layout_marginTop="20dp"
         android:layout_width="170dp"
         android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/run2"
+        android:background="@drawable/shape"/>
+
+
+
+
 
 
 

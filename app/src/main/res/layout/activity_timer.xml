@@ -18,7 +18,7 @@
         android:id="@+id/runImage"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:src="@drawable/run"
+        android:src="@drawable/run1"
         android:layout_below="@+id/chronometer"
         android:layout_marginTop="80dp"
         android:visibility="invisible"/>
