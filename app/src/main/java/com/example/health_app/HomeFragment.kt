@@ -124,11 +124,11 @@ class HomeFragment : Fragment() {
 
 
                     tvTemp.text = cTemp.toInt().toString() + "°"
-                    tvTempHi.text = "최고"+maxTemp.toInt().toString()+ "°  "
-                    tvTempLo.text = "최저"+minTemp.toInt().toString()+ "°"
+                    tvTempHi.text = "최고 "+maxTemp.toInt().toString()+ "°  "
+                    tvTempLo.text = "최저 "+minTemp.toInt().toString()+ "°"
 
 
-                    tvFeel.text = feel_like.toInt().toString()+"°"
+                    tvFeel.text = "체감온도 "+feel_like.toInt().toString()+"°"
 
 
 

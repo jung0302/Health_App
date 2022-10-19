@@ -16,7 +16,7 @@
 
         <ImageButton
             android:layout_marginTop="15dp"
-            android:layout_marginLeft="370dp"
+            android:layout_marginLeft="330dp"
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            app:videoId="t1QcH3MkzV8"
+            app:videoId="Hx8Lc_0hUaI"
             app:autoPlay="true"
              />
 
