@@ -12,6 +12,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import java.io.FileInputStream
+import java.io.FileOutputStream
 import java.io.IOException
 import java.util.*
 
@@ -52,10 +53,10 @@ class CalendarFragment : Fragment() {
 //            edtDiary!!.setText(str)
 //            btnWrite!!.isEnabled = true
 //        }
-
+//
 //        btnWrite!!.setOnClickListener {
 //            try {
-//                val outFs = openFileOutput(
+//                val outFs: FileOutputStream  = openFileOutput(
 //                    fileName,
 //                    AppCompatActivity.MODE_PRIVATE
 //                )
@@ -68,6 +69,8 @@ class CalendarFragment : Fragment() {
 //        }
         return view
     }
+
+
 
 //    fun readDiary(fName: String?): String? {
 //        var diaryStr: String? = null

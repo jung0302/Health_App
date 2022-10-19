@@ -3,17 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".HomeFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:layout_margin="20dp"
         android:orientation="vertical">
 
         <ImageButton
             android:layout_marginTop="15dp"
-            android:layout_marginLeft="370dp"
+            android:layout_marginLeft="330dp"
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,20 +33,66 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-
+            android:fontFamily="@font/notosans_bold"
 
             android:text="위치"
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/text2"
+            android:id="@+id/tvTemp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
 
             android:padding="12dp"
-            android:text="날씨"
+            android:text="기온"
             android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tvTempHi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="최고"
+            android:textSize="15dp"
+            android:fontFamily="@font/notosans_bold"
+            />
+        <TextView
+            android:id="@+id/tvTempLo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="최저"
+            android:textSize="15dp"
+            android:fontFamily="@font/notosans_bold"
+            />
+
+        <ImageView
+            android:id="@+id/weather"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"/>
+
+        <TextView
+            android:id="@+id/tvFeel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosans_bold"
+            android:textSize="17dp"
+            android:text="0°"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:videoId="Hx8Lc_0hUaI"
+            app:autoPlay="true"
+             />
 
 
     </LinearLayout>
