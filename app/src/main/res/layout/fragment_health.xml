@@ -9,6 +9,7 @@
 
 
     <ImageButton
+        android:id="@+id/top"
         android:layout_width="170dp"
         android:layout_height="60dp"
         android:layout_gravity="center_horizontal"
@@ -16,6 +17,7 @@
         android:background="@drawable/shape"/>
 
     <ImageButton
+        android:id="@+id/bottom"
         android:layout_marginTop="20dp"
         android:layout_width="170dp"
         android:layout_height="60dp"
@@ -24,6 +26,7 @@
         android:background="@drawable/shape"/>
 
     <ImageButton
+        android:id="@+id/aerobic"
         android:layout_marginTop="20dp"
         android:layout_width="170dp"
         android:layout_height="60dp"

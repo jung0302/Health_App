@@ -16,6 +16,8 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+
+
     buildTypes {
         release {
             minifyEnabled false
@@ -57,4 +59,6 @@ dependencies {
     implementation 'com.google.android.gms:play-services-location:18.0.0' //gps
 
     implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'//유튜브 영상
+
+
 }

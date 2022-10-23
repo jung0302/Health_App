@@ -12,12 +12,15 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:videoId="1WOZFpwRwrc" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="테스트"
+            android:text="트레드밀"
             android:textAlignment="center"
             android:textSize="30dp"/>
 
