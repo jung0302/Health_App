@@ -15,6 +15,48 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Health_App">
         <activity
+            android:name=".Aerobic6"
+            android:exported="false" />
+        <activity
+            android:name=".Aerobic5"
+            android:exported="false" />
+        <activity
+            android:name=".Aerobic4"
+            android:exported="false" />
+        <activity
+            android:name=".Aerobic3"
+            android:exported="false" />
+        <activity
+            android:name=".Aerobic2"
+            android:exported="false" />
+        <activity
+            android:name=".Aerobic1"
+            android:exported="false" />
+        <activity
+            android:name=".Aerobic0"
+            android:exported="false" />
+        <activity
+            android:name=".Bottom6"
+            android:exported="false" />
+        <activity
+            android:name=".Bottom5"
+            android:exported="false" />
+        <activity
+            android:name=".Bottom4"
+            android:exported="false" />
+        <activity
+            android:name=".Bottom3"
+            android:exported="false" />
+        <activity
+            android:name=".Bottom2"
+            android:exported="false" />
+        <activity
+            android:name=".Bottom1"
+            android:exported="false" />
+        <activity
+            android:name=".Bottom0"
+            android:exported="false" />
+        <activity
             android:name=".Top6"
             android:exported="false" />
         <activity
