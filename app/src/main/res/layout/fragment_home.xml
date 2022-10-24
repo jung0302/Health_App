@@ -25,61 +25,77 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:background="@android:color/transparent"
-
             android:src="@drawable/refresh" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:fontFamily="@font/notosans_bold"
 
             android:text="위치"
-            android:textSize="18sp" />
+            android:textSize="40sp" />
+            <ImageView
+                android:id="@+id/weather"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/sun"
+                android:layout_toStartOf="@+id/tvTemp"
+                />
 
         <TextView
             android:id="@+id/tvTemp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/weather"
+            android:fontFamily="@font/notosans_bold"
+            android:layout_marginRight="20dp"
             android:padding="12dp"
-            android:text="기온"
+            android:text="기온:"
             android:textSize="18sp" />
         <TextView
             android:id="@+id/tvTempHi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="최고"
+            android:text="최고:"
             android:textSize="15dp"
+            android:layout_alignLeft="@+id/weather"
+            android:layout_below="@+id/weather"
             android:fontFamily="@font/notosans_bold"
             />
         <TextView
             android:id="@+id/tvTempLo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:text="최저"
+
+            android:text="최저:"
+            android:layout_marginLeft="40dp"
             android:textSize="15dp"
+            android:layout_below="@id/weather"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/tvTempHi"
             android:fontFamily="@font/notosans_bold"
             />
 
-        <ImageView
-            android:id="@+id/weather"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="10dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="60dp"/>
+
 
         <TextView
             android:id="@+id/tvFeel"
+            android:layout_below="@+id/text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/notosans_bold"
             android:textSize="17dp"
-            android:text="0°"/>
+            android:text="체감온도:"/>
+
+        </RelativeLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"

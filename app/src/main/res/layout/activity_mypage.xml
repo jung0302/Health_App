@@ -6,7 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MypageActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_marginTop="200dp"
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
     <TextView
+        android:layout_toRightOf="@+id/img"
         android:layout_marginTop="200dp"
         android:id="@+id/nickname"
         android:layout_width="match_parent"
@@ -16,6 +26,20 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_toRightOf="@+id/img"
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="성별: "
+            android:layout_below="@+id/nickname"
+            android:textSize="20sp"
+             />
+
+    </RelativeLayout>
+
+
+
 
     <Button
         android:id="@+id/kakao_logout_button"

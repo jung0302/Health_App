@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import com.kakao.sdk.user.UserApiClient
@@ -30,10 +31,15 @@ class MypageFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_mypage, container, false)
 
         val nickname = view.findViewById<TextView>(R.id.nickname) // 로그인 버튼
+        val image = view.findViewById<ImageView>(R.id.img)
+        val gender = view.findViewById<TextView>(R.id.gender)
+        val email = view.findViewById<TextView>(R.id.email)
 
 
         UserApiClient.instance.me { user, error ->
             nickname.text = "닉네임: ${user?.kakaoAccount?.profile?.nickname}"
+            gender.text = "성별: ${user?.kakaoAccount?.gender}"
+            email.text = "이메일: ${user?.kakaoAccount?.email}"
 
         }
 
