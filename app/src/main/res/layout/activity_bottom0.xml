@@ -20,15 +20,15 @@
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:videoId="A2kHURY746E" />
+            app:videoId="J1ozS1K3gvM" />
 
         <TextView
             android:textColor="@color/white"
             android:layout_marginTop="30dp"
             android:layout_gravity="center_horizontal"
-            android:layout_width="150dp"
+            android:layout_width="200dp"
             android:layout_height="45dp"
-            android:text="벤치프레스"
+            android:text="바벨 백스쿼트"
             android:textAlignment="center"
             android:textSize="30dp"
             android:background="@drawable/textview"/>
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
-            android:text="  1. 벤치에 누운상태에서 바벨을 어깨너비보다 조금 넓게 잡고 위로 들어올린다."
+            android:text="  1. 다리를 어깨너비만큼 벌리고, 바벨을 등 뒤 어깨 위에 올려준다."
             android:textSize="16dp"
             android:textColor="#23346C"
             />
@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="  2. 가슴 근육의 이완을 느끼며 팔을 굽혀 바벨을 가슴 방향으로 내린다."
+            android:text="  2. 상체가 앞으로 숙여지지 않도록 코어에 힘을 준 상태로 엉덩이를 뒤로 빼며 앉는다."
             android:textSize="16dp"
             android:textColor="#23346C" />
 
@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="  3. 가슴 근육의 수축을 느끼며 몸의 수직방향으로 바벨을 밀어올린다."
+            android:text="  3. 상체의 자세를 유지하면서, 발바닥으로 지면을 밀고 일어나면서 1번의 자세로 돌아온다."
             android:textSize="16dp"
             android:textColor="#23346C" />
 

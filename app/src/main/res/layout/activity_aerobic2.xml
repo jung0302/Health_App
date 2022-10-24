@@ -1,9 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Aerobic2">
+    tools:context=".CardViewTEST"
+    android:layout_margin="30dp"
+    app:cardCornerRadius="30dp">
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:videoId="_fUVPo4ZLws" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:text="로잉머신"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:background="@drawable/textview"/>
+
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="운동방법"
+            android:textSize="20dp"/>
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="  1. 양 발을 로잉 머신 발판에 고정시키고, 양손으로 머신의 핸들을 잡고, 양쪽 다리의 힘으로 발판을 힘껏 밀어낸다. 이때 핸들을 잡은 상태로 굽지않도록 등을 곧게 유지한다."
+            android:textSize="16dp"
+            android:textColor="#23346C" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="  2. 양 다리가 쭉 펴지면 코어 근육을 사용하여 몸을 45도 정도로 뒤로 젖힙니다. 이때 등이 굽지 않도록 몸통에 힘을 준 상태로, 양손에 붙잡은 핸들을 가슴팍으로 끌어당긴다."
+            android:textSize="16dp"
+            android:textColor="#23346C" />
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:text="               도구              ㅣ               타입            "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:background="#9F9696"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="                머신                                시간            "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

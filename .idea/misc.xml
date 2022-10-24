@@ -9,6 +9,13 @@
         <entry key="..\:/android/src/Health/app/src/main/res/drawable/button.xml" value="0.282" />
         <entry key="..\:/android/src/Health/app/src/main/res/drawable/shape.xml" value="0.1235" />
         <entry key="..\:/android/src/Health/app/src/main/res/drawable/textview.xml" value="0.282" />
+        <entry key="..\:/android/src/Health/app/src/main/res/layout/activity_aerobic0.xml" value="0.259375" />
+        <entry key="..\:/android/src/Health/app/src/main/res/layout/activity_aerobic1.xml" value="0.259375" />
+        <entry key="..\:/android/src/Health/app/src/main/res/layout/activity_aerobic2.xml" value="0.259375" />
+        <entry key="..\:/android/src/Health/app/src/main/res/layout/activity_aerobic3.xml" value="0.259375" />
+        <entry key="..\:/android/src/Health/app/src/main/res/layout/activity_aerobic4.xml" value="0.259375" />
+        <entry key="..\:/android/src/Health/app/src/main/res/layout/activity_aerobic5.xml" value="0.259375" />
+        <entry key="..\:/android/src/Health/app/src/main/res/layout/activity_aerobic6.xml" value="0.259375" />
         <entry key="..\:/android/src/Health/app/src/main/res/layout/activity_aerobic_list.xml" value="0.1" />
         <entry key="..\:/android/src/Health/app/src/main/res/layout/activity_bottom0.xml" value="0.25833333333333336" />
         <entry key="..\:/android/src/Health/app/src/main/res/layout/activity_bottom1.xml" value="0.25833333333333336" />
@@ -32,6 +39,7 @@
         <entry key="..\:/android/src/Health/app/src/main/res/layout/activity_top_list.xml" value="0.1" />
         <entry key="..\:/android/src/Health/app/src/main/res/layout/activity_top_list2.xml" value="0.1203125" />
         <entry key="..\:/android/src/Health/app/src/main/res/layout/fragment_health.xml" value="0.1" />
+        <entry key="..\:/android/src/Health/app/src/main/res/layout/fragment_home.xml" value="0.259375" />
         <entry key="..\:/android/src/Health/app/src/main/res/layout/fragment_mypage.xml" value="0.27760416666666665" />
         <entry key="..\:/android/src/Health/app/src/main/res/layout/fragment_skill.xml" value="0.12552083333333333" />
         <entry key="..\:/health/app/src/main/res/drawable-v24/nav_icon_color.xml" value="0.1" />

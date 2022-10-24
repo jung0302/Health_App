@@ -20,7 +20,7 @@
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:videoId="A2kHURY746E" />
+            app:videoId="9w8d_EL-7e4" />
 
         <TextView
             android:textColor="@color/white"
@@ -28,7 +28,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_width="150dp"
             android:layout_height="45dp"
-            android:text="벤치프레스"
+            android:text="레그 컬"
             android:textAlignment="center"
             android:textSize="30dp"
             android:background="@drawable/textview"/>
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
-            android:text="  1. 벤치에 누운상태에서 바벨을 어깨너비보다 조금 넓게 잡고 위로 들어올린다."
+            android:text="  1. 머신을 엎드린 상태에서, 종아리 쪽의 패드가 아킬레스건 바로 위쪽에 위치하도록 머신을 조정한다."
             android:textSize="16dp"
             android:textColor="#23346C"
             />
@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="  2. 가슴 근육의 이완을 느끼며 팔을 굽혀 바벨을 가슴 방향으로 내린다."
+            android:text="  2. 발목을 세운 상태에서, 무릎을 굽혀 기구를 올려준다."
             android:textSize="16dp"
             android:textColor="#23346C" />
 
@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="  3. 가슴 근육의 수축을 느끼며 몸의 수직방향으로 바벨을 밀어올린다."
+            android:text="  3. 허리, 엉덩이, 햄스트링에 긴장감을 유지하면서 기구를 천천히 내린다."
             android:textSize="16dp"
             android:textColor="#23346C" />
 
@@ -90,7 +90,7 @@
         <TextView
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
-            android:text="                   바벨                             무게/횟수            "
+            android:text="                   머신                             무게/횟수            "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

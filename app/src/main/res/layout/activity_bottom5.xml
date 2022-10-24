@@ -20,15 +20,15 @@
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:videoId="A2kHURY746E" />
+            app:videoId="mS9iwXhycJI" />
 
         <TextView
             android:textColor="@color/white"
             android:layout_marginTop="30dp"
             android:layout_gravity="center_horizontal"
-            android:layout_width="150dp"
+            android:layout_width="200dp"
             android:layout_height="45dp"
-            android:text="벤치프레스"
+            android:text="레그 익스텐션"
             android:textAlignment="center"
             android:textSize="30dp"
             android:background="@drawable/textview"/>
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
-            android:text="  1. 벤치에 누운상태에서 바벨을 어깨너비보다 조금 넓게 잡고 위로 들어올린다."
+            android:text="  1. 의자는 무릎 바로 아래에 올 수 있게, 패드는 발목 살짝 위에 위치할 수 있도록 머신을 조정한다."
             android:textSize="16dp"
             android:textColor="#23346C"
             />
@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="  2. 가슴 근육의 이완을 느끼며 팔을 굽혀 바벨을 가슴 방향으로 내린다."
+            android:text="  2. 엉덩이가 떨어지지 않게 유지하면서, 허벅지의 힘으로 고정부위를 지긋이 밀어 올린다."
             android:textSize="16dp"
             android:textColor="#23346C" />
 
@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="  3. 가슴 근육의 수축을 느끼며 몸의 수직방향으로 바벨을 밀어올린다."
+            android:text="  3. 근육의 긴장을 유지하면서 천천히 무릎을 굽혀준다."
             android:textSize="16dp"
             android:textColor="#23346C" />
 
@@ -90,7 +90,7 @@
         <TextView
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
-            android:text="                   바벨                             무게/횟수            "
+            android:text="                   머신                             무게/횟수            "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

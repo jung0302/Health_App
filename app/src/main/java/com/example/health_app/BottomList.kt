@@ -12,7 +12,7 @@ class BottomList : AppCompatActivity() {
         setContentView(R.layout.activity_bottom_list)
 
         val listView = findViewById<ListView>(R.id.listView)
-        val item = arrayOf("바벨 백스쿼트","컨벤셔널 데드리프트","프론트 스쿼트","레그 프레스","레그 컬","레그 익스텐션","덤벨 런지","스모 데드리프트","스탠딩 카프 레이즈","이너 싸이 머신","에어 스쿼트","런지","점프 스쿼트","스텝업 ")
+        val item = arrayOf("바벨 백스쿼트","맨몸 스플릿 스쿼트","프론트 스쿼트","레그 프레스","레그 컬","레그 익스텐션","덤벨 런지","스모 데드리프트","스탠딩 카프 레이즈","이너 싸이 머신","에어 스쿼트","런지","점프 스쿼트","스텝업 ")
         listView.adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,item)
 
 

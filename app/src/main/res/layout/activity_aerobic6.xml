@@ -1,9 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Aerobic6">
+    tools:context=".CardViewTEST"
+    android:layout_margin="30dp"
+    app:cardCornerRadius="30dp">
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:videoId="Z2ND1ui8Xqk" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:text="배틀링 로프"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:background="@drawable/textview"/>
+
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="운동방법"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="  1. 양발을 어깨 너비보다 넓게 벌리고 서서 양손으로 줄을 움켜잡는다."
+            android:textSize="16dp"
+            android:textColor="#23346C"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="  2. 엉덩이를 살짝 낮추고 코어에 힘을 준 상태에서, 오른손과 왼손을 번갈아가며 위아래로 움직여준다."
+            android:textSize="16dp"
+            android:textColor="#23346C" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="  3. 각각의 줄이 물결 모양이 나타날 수 있도록 리듬에 맞춰 양손을 움직여준다."
+            android:textSize="16dp"
+            android:textColor="#23346C" />
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:text="               도구              ㅣ               타입            "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:background="#9F9696"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="                기타                                시간            "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

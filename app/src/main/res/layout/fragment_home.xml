@@ -107,7 +107,7 @@
             android:layout_height="wrap_content"
 
             app:videoId="Hx8Lc_0hUaI"
-            app:autoPlay="true"
+            app:autoPlay="false"
              />
 
 

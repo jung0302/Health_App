@@ -1,9 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Aerobic5">
+    tools:context=".CardViewTEST"
+    android:layout_margin="30dp"
+    app:cardCornerRadius="30dp">
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:videoId="izNYH92GX18" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:text="덤벨 버피"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:background="@drawable/textview"/>
+
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="운동방법"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="  1. 양손에 덤벨을 들고, 다리는 어깨 너비만큼 벌리고 편하게 선다."
+            android:textSize="16dp"
+            android:textColor="#23346C"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="  2. 스쿼트 자세를 취한 이후 상체를 내리면서 팔굽혀펴기 1회를 수행한다."
+            android:textSize="16dp"
+            android:textColor="#23346C" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="  3. 엎드려뻗쳐 자세에서 다리를 가슴 쪽으로 당겨 스쿼트 동작으로 돌아온 후, 무릎과 골반을 편주면서 수직방향으로 점프한다."
+            android:textSize="16dp"
+            android:textColor="#23346C" />
+
+
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:text="               도구              ㅣ               타입            "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:background="#9F9696"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="                   덤벨                             무게/횟수            "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
