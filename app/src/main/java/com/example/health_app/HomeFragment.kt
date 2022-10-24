@@ -64,9 +64,6 @@ class HomeFragment : Fragment() {
         var lon = "126.9297888"
     }
 
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
