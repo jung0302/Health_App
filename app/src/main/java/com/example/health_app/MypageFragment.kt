@@ -40,6 +40,7 @@ class MypageFragment : Fragment() {
             nickname.text = "닉네임: ${user?.kakaoAccount?.profile?.nickname}"
             gender.text = "성별: ${user?.kakaoAccount?.gender}"
             email.text = "이메일: ${user?.kakaoAccount?.email}"
+            image.setImageResource("프로필 사진:${user?.kakaoAccount?.profile?.thumbnailImageUrl}".toInt())
 
         }
 

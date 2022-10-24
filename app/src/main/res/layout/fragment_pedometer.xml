@@ -18,6 +18,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:background="@drawable/button"
         android:text="걸음수 체크"
         android:fontFamily="@font/notosans_bold"/>
     </LinearLayout>

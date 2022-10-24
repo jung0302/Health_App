@@ -12,6 +12,7 @@
         <ImageView
             android:layout_marginTop="50dp"
             android:id="@+id/img"
+            android:src="@drawable/user"
             android:layout_width="130dp"
             android:layout_height="130dp"/>
 
@@ -55,7 +56,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/notosans_bold"
-        android:text="로그아웃"
+        android:text="LOGOUT"
+        android:background="@drawable/button"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/kakao_unlink_button"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -66,8 +68,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/notosans_bold"
+        android:background="@drawable/button"
         android:text="회원 탈퇴"
         android:textSize="15sp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
