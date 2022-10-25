@@ -3,9 +3,9 @@ package com.example.health_app
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class CardViewTEST : AppCompatActivity() {
+class Bottom2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_card_view_test)
+        setContentView(R.layout.activity_bottom2)
     }
 }

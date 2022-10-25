@@ -20,15 +20,15 @@
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:videoId="A2kHURY746E" />
+            app:videoId="nKihlF5FUlY" />
 
         <TextView
             android:textColor="@color/white"
             android:layout_marginTop="30dp"
             android:layout_gravity="center_horizontal"
-            android:layout_width="150dp"
+            android:layout_width="200dp"
             android:layout_height="45dp"
-            android:text="벤치프레스"
+            android:text="프론트 스쿼트"
             android:textAlignment="center"
             android:textSize="30dp"
             android:background="@drawable/textview"/>
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
-            android:text="  1. 벤치에 누운상태에서 바벨을 어깨너비보다 조금 넓게 잡고 위로 들어올린다."
+            android:text="  1. 바벨을 어깨 너비로 잡고 쇄골 위에 올려둔다."
             android:textSize="16dp"
             android:textColor="#23346C"
             />
@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="  2. 가슴 근육의 이완을 느끼며 팔을 굽혀 바벨을 가슴 방향으로 내린다."
+            android:text="  2. 시선은 정면을 유지하면서, 엉덩이를 뒤로 빼며 앉는다.(팔꿈치를 지속적으로 위로 들어올려 바벨이 흘러내리지 않도록 한다.)"
             android:textSize="16dp"
             android:textColor="#23346C" />
 
@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="  3. 가슴 근육의 수축을 느끼며 몸의 수직방향으로 바벨을 밀어올린다."
+            android:text="  3. 가슴을 펴고 허리를 곧게 세워 상체를 편 상태로, 발바닥으로 지면을 지긋이 누르며 일어난다."
             android:textSize="16dp"
             android:textColor="#23346C" />
 
@@ -81,11 +81,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-         <View
-             android:layout_marginTop="10dp"
-             android:background="#9F9696"
-             android:layout_width="wrap_content"
-             android:layout_height="1dp"/>
+        <View
+            android:layout_marginTop="10dp"
+            android:background="#9F9696"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"/>
 
         <TextView
             android:layout_marginTop="20dp"
