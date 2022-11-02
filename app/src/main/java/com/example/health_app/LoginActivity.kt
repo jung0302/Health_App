@@ -18,8 +18,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        val height:EditText = findViewById(R.id.height)
-        val weight:EditText = findViewById(R.id.weight)
+
 
         val keyHash = Utility.getKeyHash(this)
         Log.d("Hash", keyHash)

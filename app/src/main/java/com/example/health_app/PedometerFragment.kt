@@ -39,6 +39,7 @@ public class PedometerFragment :Fragment(){
         button.setOnClickListener(){
             var intent = Intent(this.requireContext(),PedometerActivity::class.java)
             startActivity(intent)
+            
         }
 
 

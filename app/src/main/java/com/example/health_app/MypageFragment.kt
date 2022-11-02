@@ -34,13 +34,15 @@ class MypageFragment : Fragment() {
         val image = view.findViewById<ImageView>(R.id.img)
         val gender = view.findViewById<TextView>(R.id.gender)
         val email = view.findViewById<TextView>(R.id.email)
+        val age = view.findViewById<TextView>(R.id.age)
 
 
         UserApiClient.instance.me { user, error ->
             nickname.text = "닉네임: ${user?.kakaoAccount?.profile?.nickname}"
             gender.text = "성별: ${user?.kakaoAccount?.gender}"
             email.text = "이메일: ${user?.kakaoAccount?.email}"
-            image.setImageResource("프로필 사진:${user?.kakaoAccount?.profile?.thumbnailImageUrl}".toInt())
+            age.text = "연령대: ${user?.kakaoAccount?.ageRange}"
+
 
         }
 

@@ -9,6 +9,7 @@
     android:gravity="center">
 
     <DatePicker
+        android:layout_marginTop="20dp"
         android:id="@+id/datePicker1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,12 +29,14 @@
 
     <Button
         android:id="@+id/btnWrite"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:enabled="false"
+        android:background="@drawable/button"
         android:text="저장"
-        android:textColor="#fddb00"
-        android:backgroundTint="#23346C"
+        android:textColor="@color/black"
+
+
         />
 
 </LinearLayout>

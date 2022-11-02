@@ -9,27 +9,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:gravity="center">
 
-    <EditText
-        android:id="@+id/height"
-        android:layout_width="170dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="10dp"
-        android:hint="키 입력"
-        android:maxLength="3" />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/app_icon"/>
 
-    <EditText
-        android:id="@+id/weight"
-        android:layout_gravity="center"
-        android:layout_width="170dp"
-        android:layout_height="50dp"
-        android:hint="몸무게 입력"
-        android:maxLength="3"
-        />
+
+
+    </LinearLayout>
+
 
     <ImageButton
         android:id="@+id/kakao_login_button"
@@ -42,6 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

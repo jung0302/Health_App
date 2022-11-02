@@ -121,7 +121,7 @@ class HomeFragment : Fragment() {
 
 
                     tvTemp.text = cTemp.toInt().toString() + "°"
-                    tvTempHi.text = "최고 "+maxTemp.toInt().toString()+ "°  "
+                    tvTempHi.text = "최고 "+maxTemp.toInt().toString()+ "°   /"
                     tvTempLo.text = "최저 "+minTemp.toInt().toString()+ "°"
 
 
