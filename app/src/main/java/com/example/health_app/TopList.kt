@@ -48,31 +48,31 @@ class TopList : AppCompatActivity() {
                 startActivity(intent)
             }
             else if (position==7){
-                val intent = Intent(view.context,Top6::class.java)
+                val intent = Intent(view.context,Top7::class.java)
                 startActivity(intent)
             }
             else if (position==8){
-                val intent = Intent(view.context,Top6::class.java)
+                val intent = Intent(view.context,Top8::class.java)
                 startActivity(intent)
             }
             else if (position==9){
-                val intent = Intent(view.context,Top6::class.java)
+                val intent = Intent(view.context,Top9::class.java)
                 startActivity(intent)
             }
             else if (position==10){
-                val intent = Intent(view.context,Top6::class.java)
+                val intent = Intent(view.context,Top10::class.java)
                 startActivity(intent)
             }
             else if (position==11){
-                val intent = Intent(view.context,Top6::class.java)
+                val intent = Intent(view.context,Top11::class.java)
                 startActivity(intent)
             }
             else if (position==12){
-                val intent = Intent(view.context,Top6::class.java)
+                val intent = Intent(view.context,Top12::class.java)
                 startActivity(intent)
             }
             else if (position==13){
-                val intent = Intent(view.context,Top6::class.java)
+                val intent = Intent(view.context,Top13::class.java)
                 startActivity(intent)
             }
 

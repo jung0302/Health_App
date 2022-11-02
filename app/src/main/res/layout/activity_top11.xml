@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Aerobic1"
     android:layout_margin="30dp"
-    app:cardCornerRadius="30dp">
+    app:cardCornerRadius="30dp"
+    android:backgroundTint="#D1FAFF">
     <ImageView
         android:scaleType="centerCrop"
         android:layout_marginTop="60dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/bg"/>
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,15 +21,15 @@
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:videoId="0ax5SrzUad0" />
+            app:videoId="qWUz1tQHUWo" />
 
         <TextView
             android:textColor="@color/white"
             android:layout_marginTop="30dp"
             android:layout_gravity="center_horizontal"
-            android:layout_width="150dp"
+            android:layout_width="200dp"
             android:layout_height="45dp"
-            android:text="싸이클"
+            android:text="덤벨 슈러그"
             android:textAlignment="center"
             android:textSize="30dp"
             android:background="@drawable/textview"/>
@@ -50,12 +49,30 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
-            android:text="  1. 안장을 체형에 맞게 조절하고 알맞은 강도로 운동한다."
+            android:text="  1. 양발을 어깨너비로 적당히 벌리고, 양손에 덤벨을 들어 허벅지 옆에 위치시킨다."
             android:textSize="16dp"
             android:textColor="#23346C"
             />
 
+        <TextView
 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="  2. 어깨를 귀에 붙인다는 느낌으로 최대한 어깨를 끌어올린다."
+            android:textSize="16dp"
+            android:textColor="#23346C" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="  3. 승모근에 저항감을 느끼면서 어깨를 천천히 내리고 시작 자세로 돌아간다."
+            android:textSize="16dp"
+            android:textColor="#23346C" />
 
 
         <TextView
@@ -74,7 +91,7 @@
         <TextView
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
-            android:text="                맨몸                                시간            "
+            android:text="                   덤벨                             무게/횟수            "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
