@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
@@ -18,7 +19,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-
+        val button = findViewById<Button>(R.id.btn1)
 
         val keyHash = Utility.getKeyHash(this)
         Log.d("Hash", keyHash)
@@ -94,6 +95,11 @@ class LoginActivity : AppCompatActivity() {
             }else{
                 UserApiClient.instance.loginWithKakaoAccount(this, callback = callback)
             }
+        }
+
+        button.setOnClickListener{
+            var intent = Intent(applicationContext,MainActivity::class.java)
+            startActivity(intent)
         }
     }
 
