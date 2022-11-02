@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Aerobic1"
     android:layout_margin="30dp"
     app:cardCornerRadius="30dp">
     <ImageView
@@ -13,7 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/bg"/>
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,15 +20,15 @@
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:videoId="0ax5SrzUad0" />
+            app:videoId="qWUz1tQHUWo" />
 
         <TextView
             android:textColor="@color/white"
             android:layout_marginTop="30dp"
             android:layout_gravity="center_horizontal"
-            android:layout_width="150dp"
+            android:layout_width="200dp"
             android:layout_height="45dp"
-            android:text="싸이클"
+            android:text="바벨 컬"
             android:textAlignment="center"
             android:textSize="30dp"
             android:background="@drawable/textview"/>
@@ -50,12 +48,30 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
-            android:text="  1. 안장을 체형에 맞게 조절하고 알맞은 강도로 운동한다."
+            android:text="  1. 양발을 어깨너비로 적당히 벌리고, 바벨을 어깨보다 살짝 넓게 잡고 선다."
             android:textSize="16dp"
             android:textColor="#23346C"
             />
 
+        <TextView
 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="  2. 팔꿈치를 고정한 상태에서, 이두의 힘으로 바벨을 들어올린다."
+            android:textSize="16dp"
+            android:textColor="#23346C" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="  3. 이두의 긴장감을 유지하면서 바벨을 천천히 내린다."
+            android:textSize="16dp"
+            android:textColor="#23346C" />
 
 
         <TextView
@@ -74,7 +90,7 @@
         <TextView
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
-            android:text="                맨몸                                시간            "
+            android:text="                   바벨                             무게/횟수            "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
