@@ -16,6 +16,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Health_App">
         <activity
+            android:name=".Bottom13"
+            android:exported="false" />
+        <activity
+            android:name=".Bottom12"
+            android:exported="false" />
+        <activity
+            android:name=".Bottom11"
+            android:exported="false" />
+        <activity
+            android:name=".Bottom10"
+            android:exported="false" />
+        <activity
+            android:name=".Bottom9"
+            android:exported="false" />
+        <activity
+            android:name=".Bottom8"
+            android:exported="false" />
+        <activity
+            android:name=".Bottom7"
+            android:exported="false" />
+        <activity
             android:name=".Top13"
             android:exported="false" />
         <activity
