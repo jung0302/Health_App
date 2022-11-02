@@ -1,7 +1,12 @@
 package com.example.health_app
 
+
+
 import android.content.Context
+import android.content.Context.MODE_PRIVATE
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -14,6 +19,7 @@ import androidx.appcompat.app.AppCompatActivity
 import java.io.FileInputStream
 import java.io.FileOutputStream
 import java.io.IOException
+
 import java.util.*
 
 
@@ -22,7 +28,7 @@ class CalendarFragment : Fragment() {
 
     var dp: DatePicker? = null
     var edtDiary: EditText? = null
-    var btnWrite: Button? = null
+    private lateinit var button: Button
     var fileName: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,15 +41,15 @@ class CalendarFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_calendar, container, false)
-        dp = view.findViewById<View>(R.id.datePicker1) as DatePicker
-        edtDiary = view.findViewById<View>(R.id.edtDiary) as EditText
-        btnWrite = view.findViewById<View>(R.id.btnWrite) as Button
-
-        val cal = Calendar.getInstance()
-        val cYear = cal[Calendar.YEAR]
-        val cMonth = cal[Calendar.MONTH]
-        val cDay = cal[Calendar.DAY_OF_MONTH]
-
+//        dp = view.findViewById<View>(R.id.datePicker1) as DatePicker
+//        edtDiary = view.findViewById<View>(R.id.edtDiary) as EditText
+        button = view.findViewById(R.id.btnWrite)
+//
+//        val cal = Calendar.getInstance()
+//        val cYear = cal[Calendar.YEAR]
+//        val cMonth = cal[Calendar.MONTH]
+//        val cDay = cal[Calendar.DAY_OF_MONTH]
+//
 //        dp!!.init(cYear, cMonth, cDay) { view, year, monthOfYear, dayOfMonth ->
 //            fileName = (Integer.toString(year) + "_"
 //                    + Integer.toString(monthOfYear + 1) + "_"
@@ -56,9 +62,9 @@ class CalendarFragment : Fragment() {
 //
 //        btnWrite!!.setOnClickListener {
 //            try {
-//                val outFs: FileOutputStream  = openFileOutput(
+//                val outFs  = openFileOutput(
 //                    fileName,
-//                    AppCompatActivity.MODE_PRIVATE
+//                    MODE_PRIVATE
 //                )
 //                val str = edtDiary!!.text.toString()
 //                outFs.write(str.toByteArray())
@@ -67,8 +73,15 @@ class CalendarFragment : Fragment() {
 //            } catch (e: IOException) {
 //            }
 //        }
+        button.setOnClickListener{
+            var intent = Intent(this.requireContext(),Diary::class.java)
+            startActivity(intent)
+            Log.d("d","클릭")
+        }
+
         return view
     }
+
 
 
 
