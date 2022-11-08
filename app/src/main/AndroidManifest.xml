@@ -16,6 +16,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Health_App">
         <activity
+            android:name=".Aerobic10"
+            android:exported="false" />
+        <activity
+            android:name=".Aerobic9"
+            android:exported="false" />
+        <activity
+            android:name=".Aerobic8"
+            android:exported="false" />
+        <activity
+            android:name=".Aerobic7"
+            android:exported="false" />
+        <activity
             android:name=".Bottom13"
             android:exported="false" />
         <activity
@@ -143,9 +155,6 @@
             android:exported="true" />
         <activity
             android:name=".IntroActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -153,6 +162,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
         <activity
             android:name=".PedometerActivity"
             android:exported="true" />
@@ -170,7 +182,6 @@
                     android:scheme="kakao2159a419042df74cc4dfa243b7caa53b" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

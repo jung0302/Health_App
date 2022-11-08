@@ -21,13 +21,13 @@
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:videoId="hbLbg_MNjnU" />
+            app:videoId="_2jS6i9I_QI" />
 
         <TextView
             android:textColor="@color/white"
             android:layout_marginTop="30dp"
             android:layout_gravity="center_horizontal"
-            android:layout_width="150dp"
+            android:layout_width="250dp"
             android:layout_height="45dp"
             android:text="스탠딩 카프 레이즈"
             android:textAlignment="center"

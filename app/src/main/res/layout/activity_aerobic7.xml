@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".Aerobic6"
     android:layout_margin="30dp"
     app:cardCornerRadius="30dp">
     <ImageView
@@ -20,15 +21,15 @@
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:videoId="Ia9DYFMkMmU" />
+            app:videoId="8d_JOObQ2b8" />
 
         <TextView
             android:textColor="@color/white"
             android:layout_marginTop="30dp"
             android:layout_gravity="center_horizontal"
-            android:layout_width="250dp"
+            android:layout_width="200dp"
             android:layout_height="45dp"
-            android:text="덤벨 숄더 프레스"
+            android:text="덤벨 쓰러스터"
             android:textAlignment="center"
             android:textSize="30dp"
             android:background="@drawable/textview"/>
@@ -48,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
-            android:text="  1. 양손에 덤벨을 잡고 팔을 옆으로 벌려서, 덤벨을 머리와 나란히 위치시킨다."
+            android:text="  1. 덤벨을 양손에 하나씩 잡고 양 어깨 위에 올린 후 엉덩이를 뒤로 빼면서 앉는다. "
             android:textSize="16dp"
             android:textColor="#23346C"
             />
@@ -59,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="  2. 어깨를 아래방향으로 지긋이 누르면서 덤벨을 수직 방향으로 밀어올린다."
+            android:text="  2. 복근과 엉덩이에 힘을 주면서 힘차게 일어난다."
             android:textSize="16dp"
             android:textColor="#23346C" />
 
@@ -69,7 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="  3. 어깨의 자극을 느끼면서, 덤벨을 내려 시작 자세로 들어올린다."
+            android:text="  3. 일어나는 힘을 이용해 덤벨을 머리 위로 밀어 올린다."
             android:textSize="16dp"
             android:textColor="#23346C" />
 
@@ -90,7 +91,7 @@
         <TextView
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
-            android:text="                   덤벨                             무게/횟수            "
+            android:text="                덤벨                             무게/횟수            "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
