@@ -44,7 +44,7 @@ class CalendarFragment : Fragment() {
 //        dp = view.findViewById<View>(R.id.datePicker1) as DatePicker
 //        edtDiary = view.findViewById<View>(R.id.edtDiary) as EditText
         button = view.findViewById(R.id.btnWrite)
-//
+
 //        val cal = Calendar.getInstance()
 //        val cYear = cal[Calendar.YEAR]
 //        val cMonth = cal[Calendar.MONTH]
