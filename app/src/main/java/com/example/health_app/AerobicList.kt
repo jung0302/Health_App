@@ -12,7 +12,7 @@ class AerobicList : AppCompatActivity() {
         setContentView(R.layout.activity_aerobic_list)
 
         val listView = findViewById<ListView>(R.id.listView)
-        val item = arrayOf("트레드밀","싸이클","로잉머신","바 머슬업","링 머슬업","덤벨 버피","배틀링 로프","덤벨 쓰러스터","인치웜","케틀벨 스모 하이풀","스모 데드리프트 하이풀")
+        val item = arrayOf("트레드밀","싸이클","로잉머신","바 머슬업","링 머슬업","덤벨 버피","배틀링 로프","덤벨 쓰러스터","인치웜")
         listView.adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,item)
 
         listView.setOnItemClickListener { adapterView, view, position, l ->
@@ -44,7 +44,16 @@ class AerobicList : AppCompatActivity() {
                 val intent = Intent(view.context,Aerobic6::class.java)
                 startActivity(intent)
             }
+            else if (position==7){
+                val intent = Intent(view.context,Aerobic7::class.java)
+                startActivity(intent)
+            }
+            else if (position==8){
+                val intent = Intent(view.context,Aerobic8::class.java)
+                startActivity(intent)
+            }
 
-    }
+
+        }
 }
     }

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".Bottom6"
     android:layout_margin="30dp"
     app:cardCornerRadius="30dp">
     <ImageView
@@ -20,7 +21,7 @@
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:videoId="Ia9DYFMkMmU" />
+            app:videoId="_2jS6i9I_QI" />
 
         <TextView
             android:textColor="@color/white"
@@ -28,7 +29,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_width="250dp"
             android:layout_height="45dp"
-            android:text="덤벨 숄더 프레스"
+            android:text="스탠딩 카프 레이즈"
             android:textAlignment="center"
             android:textSize="30dp"
             android:background="@drawable/textview"/>
@@ -48,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
-            android:text="  1. 양손에 덤벨을 잡고 팔을 옆으로 벌려서, 덤벨을 머리와 나란히 위치시킨다."
+            android:text="  1. 어꺠 위에 무게를 위치시키고, 양손으로 머신을 잡고 받침대 위에 선다."
             android:textSize="16dp"
             android:textColor="#23346C"
             />
@@ -59,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="  2. 어깨를 아래방향으로 지긋이 누르면서 덤벨을 수직 방향으로 밀어올린다."
+            android:text="  2. 한쪽 다리를 뻗어 앞으로 나가면서 두 무릎이 90도 각도를 이룰 때까지 엉덩이를 낮춘다.(상체와 등은 곧게 편 자세를 유지)"
             android:textSize="16dp"
             android:textColor="#23346C" />
 
@@ -69,7 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="  3. 어깨의 자극을 느끼면서, 덤벨을 내려 시작 자세로 들어올린다."
+            android:text="  3. 앞발의 뒤꿈치에 무게 중심을 실어서 몸을 위쪽으로 밀어주며 원래 시작 자세로 돌아온다."
             android:textSize="16dp"
             android:textColor="#23346C" />
 

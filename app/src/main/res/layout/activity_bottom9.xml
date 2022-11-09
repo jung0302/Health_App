@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".Bottom6"
     android:layout_margin="30dp"
     app:cardCornerRadius="30dp">
     <ImageView
@@ -20,7 +21,7 @@
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:videoId="Ia9DYFMkMmU" />
+            app:videoId="24WjtrazXRE" />
 
         <TextView
             android:textColor="@color/white"
@@ -28,7 +29,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_width="250dp"
             android:layout_height="45dp"
-            android:text="덤벨 숄더 프레스"
+            android:text="이너 싸이 머신"
             android:textAlignment="center"
             android:textSize="30dp"
             android:background="@drawable/textview"/>
@@ -48,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
-            android:text="  1. 양손에 덤벨을 잡고 팔을 옆으로 벌려서, 덤벨을 머리와 나란히 위치시킨다."
+            android:text="  1. 허벅지 안쪽 받침대의 넓이를 적당하게 조절하고 머신에 앉는다."
             android:textSize="16dp"
             android:textColor="#23346C"
             />
@@ -59,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="  2. 어깨를 아래방향으로 지긋이 누르면서 덤벨을 수직 방향으로 밀어올린다."
+            android:text="  2.  호흡을 내쉬면서 양 다리를 안쪽으로 모아준다."
             android:textSize="16dp"
             android:textColor="#23346C" />
 
@@ -69,7 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="  3. 어깨의 자극을 느끼면서, 덤벨을 내려 시작 자세로 들어올린다."
+            android:text="  3. 호흡을 들이마시면서 시작 자세로 돌아간다."
             android:textSize="16dp"
             android:textColor="#23346C" />
 
@@ -90,7 +91,7 @@
         <TextView
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
-            android:text="                   덤벨                             무게/횟수            "
+            android:text="                   머신                             무게/횟수            "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
